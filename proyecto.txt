@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+	<html lang="en">
+	
+
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=, initial-scale=1.0">
+	    <title>pagina</title>
+	    <style>
+	*{
+	    box-sizing: border-box;
+	    margin:  0%;
+	    padding: 0%;
+	}
+	
+
+	html{
+	    height: 100%;
+	    background-color: white;
+	}
+	
+
+	body{
+	    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	    font-size: 1.2rem;
+	    min-height: 100%;
+	}
+	
+
+	.grid-container>*{
+	    box-shadow: -5px 10px 7px 0px rgba(red, green, blue, alpha);
+	    border-radius: 20px;
+	    padding: 10px;
+	    text-align: center;
+	}
+	
+
+	.header{
+	    grid-area: header;
+	    background: rgba(100,237,148,1);
+	    background: -moz-linear-gradient(top, rgba(100,237,148,1) 0%, rgba(81,214,161,1) 100%);
+	    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(100,237,148,1)), color-stop(100%, rgba(81,214,161,1)));
+	    background: -webkit-linear-gradient(top, rgba(100,237,148,1) 0%, rgba(81,214,161,1) 100%);
+	    background: -o-linear-gradient(top, rgba(100,237,148,1) 0%, rgba(81,214,161,1) 100%);
+	    background: -ms-linear-gradient(top, rgba(100,237,148,1) 0%, rgba(81,214,161,1) 100%);
+	    background: linear-gradient(to bottom, rgba(100,237,148,1) 0%, rgba(81,214,161,1) 100%);
+	    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#64ed94', endColorstr='#51d6a1', GradientType=0 );
+	    font-size: 130%;
+	    font-family: Arial, Helvetica, sans-serif;
+	
+
+	}
+	
+
+	.navbar{
+	    grid-area: navbar;
+	    background: rgba(100,237,148,1);
+	    background: -moz-linear-gradient(top, rgba(100,237,148,1) 0%, rgba(81,214,161,1) 100%);
+	    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(100,237,148,1)), color-stop(100%, rgba(81,214,161,1)));
+	    background: -webkit-linear-gradient(top, rgba(100,237,148,1) 0%, rgba(81,214,161,1) 100%);
+	    background: -o-linear-gradient(top, rgba(100,237,148,1) 0%, rgba(81,214,161,1) 100%);
+	    background: -ms-linear-gradient(top, rgba(100,237,148,1) 0%, rgba(81,214,161,1) 100%);
+	    background: linear-gradient(to bottom, rgba(100,237,148,1) 0%, rgba(81,214,161,1) 100%);
+	    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#64ed94', endColorstr='#51d6a1', GradientType=0 );
+	    font-size: 130%;
+	    font-family: Arial, Helvetica, sans-serif;
+	}
+	
+
+	.main{
+	    grid-area: main;
+	    background: rgba(100,237,148,1);
+	    background: -moz-linear-gradient(top, rgba(100,237,148,1) 0%, rgba(81,214,161,1) 100%);
+	    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(100,237,148,1)), color-stop(100%, rgba(81,214,161,1)));
+	    background: -webkit-linear-gradient(top, rgba(100,237,148,1) 0%, rgba(81,214,161,1) 100%);
+	    background: -o-linear-gradient(top, rgba(100,237,148,1) 0%, rgba(81,214,161,1) 100%);
+	    background: -ms-linear-gradient(top, rgba(100,237,148,1) 0%, rgba(81,214,161,1) 100%);
+	    background: linear-gradient(to bottom, rgba(100,237,148,1) 0%, rgba(81,214,161,1) 100%);
+	    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#64ed94', endColorstr='#51d6a1', GradientType=0 );
+	    font-size: 130%;
+	    font-family: Arial, Helvetica, sans-serif;
+	}
+	
+
+	.sidebar{
+	    grid-area: sidebar;
+	    background: rgba(100,237,148,1);
+	    background: -moz-linear-gradient(top, rgba(100,237,148,1) 0%, rgba(81,214,161,1) 100%);
+	    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(100,237,148,1)), color-stop(100%, rgba(81,214,161,1)));
+	    background: -webkit-linear-gradient(top, rgba(100,237,148,1) 0%, rgba(81,214,161,1) 100%);
+	    background: -o-linear-gradient(top, rgba(100,237,148,1) 0%, rgba(81,214,161,1) 100%);
+	    background: -ms-linear-gradient(top, rgba(100,237,148,1) 0%, rgba(81,214,161,1) 100%);
+	    background: linear-gradient(to bottom, rgba(100,237,148,1) 0%, rgba(81,214,161,1) 100%);
+	    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45ed94', endColorstr='#51d6a1', GradientType=0 );
+	    font-size: 130%;
+	    font-family: Arial, Helvetica, sans-serif;
+	
+
+	}
+	
+
+	.footer{
+	    grid-area: footer;
+	    background: rgba(100,237,148,1);
+	    background: -moz-linear-gradient(top, rgba(100,237,148,1) 0%, rgba(81,214,161,1) 100%);
+	    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(100,237,148,1)), color-stop(100%, rgba(81,214,161,1)));
+	    background: -webkit-linear-gradient(top, rgba(100,237,148,1) 0%, rgba(81,214,161,1) 100%);
+	    background: -o-linear-gradient(top, rgba(100,237,148,1) 0%, rgba(81,214,161,1) 100%);
+	    background: -ms-linear-gradient(top, rgba(100,237,148,1) 0%, rgba(81,214,161,1) 100%);
+	    background: linear-gradient(to bottom, rgba(100,237,148,1) 0%, rgba(81,214,161,1) 100%);
+	    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#64ed94', endColorstr='#51d6a1', GradientType=0 );
+	    font-size: 130%;
+	    font-family: Arial, Helvetica, sans-serif;
+	}
+	
+
+	.grid-container{
+	    display: grid;
+	    gap: 10px;
+	    grid-template-areas: "header"
+	    "navbar"
+	    "main"
+	    "sidebar"
+	    "footer"
+	}
+	
+
+	
+
+	@media (main-width:600px){
+	    
+	}
+	
+
+	.grid-container{
+	    grid-template:
+	    "header header"
+	    "navbar navbar"
+	    "sidebar main"
+	    "footer footer";
+	}
+	
+
+	@media (min-width:900px){
+	    .grid-container{
+	        grid-template:
+	        "header header header" 50%/50%
+	        "navbar main sidebar" auto
+	        "footer footer footer"  auto;
+	    }
+	}
+	h1{
+	    font-size: 120%;
+	    font-family: Arial;
+	  }
+	  
+	h3{
+	    font-size: 100%;
+	  }
+	  h5{
+	    font-size: 120%;
+	  }
+	
+
+	  .profesionales .box  .percent
+	{
+	    position: relative;
+	    width: 100%;
+	    height: 10px;
+	    background: rgb(149, 218, 255);
+	
+
+	}
+	.profesionales .box  .percent div
+	{
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    height: 100%;
+	    background: rgb(51, 51, 83);
+	
+
+	}
+	.Habilidades_profesionales{
+	    font-size: 30%;
+	    font-family: Arial, Helvetica, sans-serif;
+	
+
+	}
+	
+
+	    </style>
+	</head>
+	
+
+	<body class="grid-container">
+	    <header class="header"> <h1>SOBRE MI</h1>
+	    <br>
+	    <img src="erandy.jpeg" width="155"height="155" >
+	    <br>
+	    <p>Mi nombre es Erandy tengo 20 años soy de México estudiante de la ingeniería en tecnologías de la información y comunicación en el tecnológico de la Gustavo A Madero, voy en 4 semestre y este es mi proyecto de la materia de fundamentos de programación.</p>
+	    </header>
+	    <nav class="navbar"><h1>MI EXPERIENCIA</h1>
+	      <br>
+	      <p> Tengo experiencia programando en c++, en java, en html, en javascript, también tengo experiencia en MYSQL.</p>
+	    </nav>
+	    <aside class="sidebar"> <h1>HABILIDADES</h1><br>
+	 
+	    <div class="Habilidades profesionales">
+	         <div class="box"> 
+	           <h4>HTML </h4> 
+	           <div class="percent">
+	              <div style="width: 90%;"></div>  
+	           </div>  
+	         </div>
+	         <div class="box"> 
+	           <h4>JAVASCRIPT </h4> 
+	           <div class="percent">
+	              <div style="width: 90%;"></div>  
+	           </div>  
+	         </div>
+	         <div class="box"> 
+	           <h4>JAVA </h4> 
+	           <div class="percent">
+	              <div style="width: 80%;"></div>  
+	           </div>  
+	         </div>
+	         <div class="box"> 
+	           <h4>C++ </h4> 
+	           <div class="percent">
+	              <div style="width: 80%;"></div>  
+	           </div>  
+	         </div>
+	         <div class="box"> 
+	           <h4>APP MYSQL </h4> 
+	           <div class="percent">
+	              <div style="width: 90%;"></div>  
+	           </div>  
+	         </div>
+	         <div class="box">
+	  
+	
+	
+	           </div>  
+	         </div>
+	        </div>
+	</aside>
+	    <article class="main"><h1>ESTUDIOS</h1>
+	    <br><br>
+	    
+	    <h5>Preparatoria</h5>
+	    <p>Técnica en Programación</p>
+	    <p>2017-2020</p>
+	    <br><br>
+	    <h5>Universidad</h5>
+	    <p>cursando</p>
+	    <p>2022-...</p>
+	    </article>
+	    <footer class="footer"> <h1>CONTACTO</h1>
+	    <br>
+	<img src="tel.png"/><a href="tel:+525522422171">+525522422171</a>
+	<br><br>
+	<img src="https://www.facebook.com/dyanerss">Crisostomo Erandy</a>
+	<br><br>
+	<img src="coo.png"/><ahref="mailto:erandycrisostomo160@gmail.com">dycrisostomo160@gmail.com</a>
+	
+
+	    
+	    </footer>
+	
+
+	</body>
+	</html>
